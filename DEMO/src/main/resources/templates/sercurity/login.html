@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans"
+	rel="stylesheet">
+
+
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	crossorigin="anonymous">
+	
+
+<link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h1>Hey You!!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Curabitur et est sed felis aliquet sollicitudin</p>
+				<div class="buttn">
+					<a href="#" class="facebook"><i class="fa fa-facebook"
+						aria-hidden="true"></i> Login with Facebook</a> <a href="#"><i
+						class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter </a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="right">
+			<h5>LOGIN</h5>
+			<p>
+				Don't have an account? <a href="/user/signup">Create Your
+					Account</a> it takes less than a minute
+			</p>
+			<form action="/login" method="post">
+				<div class="inputs">
+					<input type="text" name="userid" placeholder="Username and Email.."> <br>
+					<input type="password" name="userpass"
+						placeholder="Enter your password..">
+				</div>
+
+				<br>
+				<br>
+
+				<div class="remember-me--forget-password">
+					<label> <input type="checkbox" /> <span>Remember
+							me ?</span>
+					</label>
+					<p>
+						<i class="fa fa-unlock-alt"></i><a href="user/MailPass">forget password?</a>
+					</p>
+				</div>
+
+				<br>
+				<button style="color: white;"> 
+					Login
+				</button>
+			</form>
+			<!-- <div style="color: red; font-size: 12px;">${message}</div> -->
+		</div>
+	</div>
+	<!-- partial -->
+
+</body>
+</html>

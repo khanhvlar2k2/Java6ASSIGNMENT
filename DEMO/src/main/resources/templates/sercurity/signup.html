@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SignUp</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans"
+	rel="stylesheet">
+
+
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h1>Hey You!!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Curabitur et est sed felis aliquet sollicitudin</p>
+				<div class="buttn">
+					<a href="#" class="facebook"><i class="fa fa-facebook"
+						aria-hidden="true"></i> Login with Facebook</a> <a href="#"><i
+						class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter </a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="right">
+			<h5>SIGNUP</h5>
+			<p>
+				Already have an account? <a href="/user/login">Login</a>
+			</p>
+			<form >
+				<div class="inputs">
+					<input type="email" placeholder="Enter your email address"
+						name="email" /> 
+						<input type="username" placeholder="Username"/> <br> 
+						<input type="password" name="password"  value="${password}" placeholder="Enter your password"/> 
+						<input type="password" name="ConfiPass" value="${ConfiPass}" placeholder="Confirm your password" />
+				</div>
+				<br>
+				<br>
+				<div class="remember-me--forget-password">
+					<label> <input type="checkbox" onclick="myFunction1()" > <span
+						class="text-checkbox">Show password?</span>
+					</label>
+
+				</div>
+
+				<br>
+				<button formaction="/user/signup/save">SignUp</button>
+				<div style="color:red; font-size: 12px;">${message1}</div> 
+				<div style="color:green; font-size: 12px;">${message2}</div> 
+			</form>
+		</div>
+	</div>
+	<!-- partial -->
+	<script type="text/javascript">
+		function myFunction1() {
+			var x = document.getElementByName("password");
+			var y = document.getElementByName("ConfiPass");
+			if (x.type === "password" || y.type ==="ConfiPass" ) {
+				x.type = "text";
+				y.type = "text";
+			} else {
+				x.type = "password";
+				y.type = "password";
+			}
+		}
+	</script>
+</body>
+</html>

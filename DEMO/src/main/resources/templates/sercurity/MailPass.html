@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	crossorigin="anonymous">
+	<base href="${pageContext.servletContext.contextPath}/">
+
+<link rel="stylesheet" href="assets/css/login.css"/>
+
+<title>Send email</title>
+</head>
+<body>
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h1>Hey You!!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Curabitur et est sed felis aliquet sollicitudin</p>
+				<div class="buttn">
+					<a href="#" class="facebook"><i class="fa fa-facebook"
+						aria-hidden="true"></i> Login with Facebook</a> <a href="#"><i
+						class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter </a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="right">
+			<h5>Send Mail</h5>
+			<p>
+				Welcome to the forgot password page! <br> Do you want to go back to the <a href="user/login">login</a> page?
+			</p>
+			<%-- <form:form action="user/send.htm" method="post"
+				modelAttribute="account">
+				<div class="inputs">
+					<p>
+						<form:input path="email" name="email" placeholder="To" />
+					</p>
+				</div>
+				<button>Send</button>
+				<p> <span style="color:green;">${succ}</span><span style="color:red;">${error}</span>  </p>
+			</form:form> --%>
+		</div>
+	</div>
+	<!-- partial -->
+</body>
+</html>
